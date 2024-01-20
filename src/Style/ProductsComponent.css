@@ -1,0 +1,361 @@
+.productcomp-name {
+    color: #308b1e;
+
+}
+
+.productcomp-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.product-hppavillon {
+    height: 500px;
+    width: 550px;
+    margin-bottom: 20px;
+
+}
+
+.product {
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.product-arrowdown {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+
+}
+
+.product-arrowup {
+    height: 20px;
+    width: 20px;
+
+}
+
+.productdetail {
+    align-items: center;
+    justify-content: center;
+    color: #308b1e;
+    margin-left: 150px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.product-model {
+    color: #308b1e;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-bold {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.productcomp-name {
+    margin-bottom: 20px;
+}
+
+.image-product {
+    height: 200px;
+    width: 300px;
+
+}
+
+.product-laptop {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-laptop img {
+    margin-top: 50px;
+    height: 300px;
+    width: 400px;
+    margin-left: 50px;
+}
+
+.product-quantity {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #308b1e;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    font-size: 20px;
+    align-self: center;
+
+
+
+}
+
+.quantity {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-addtocart {
+    background-color: #308b1e;
+    border: none;
+    height: 40px;
+    width: 200px;
+    color: white;
+    margin-left: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.productbtn-add {
+    background-color: #308b1e;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.productcomp-name {
+    margin-left: 50px;
+    font-size: 40px;
+    color: #308b1e;
+
+}
+
+.product-laptop {
+    color: #308b1e;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.product-price {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.product-quantity1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-modal {
+    width: 350px;
+    height: 150px;
+    border: 2px solid #308b1e;
+    border-radius: 10px;
+
+}
+
+.cond {
+    height: 60%;
+    border-bottom: 2px solid #308b1e;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* ProductDetails.css (or your CSS file) */
+
+/* Existing styles for ProductDetails */
+
+/* Modal Styles */
+.confirmation-modal {
+    display: none;
+    /* Initially hide the modal */
+    position: fixed;
+    top: 50%;
+    /* Center the modal vertically */
+    left: 50%;
+    /* Center the modal horizontally */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    display: none;
+    /* Initially hide the overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 9998;
+    /* Ensure overlay is behind the modal */
+    backdrop-filter: blur(5px);
+    /* Apply blur effect to the background */
+}
+
+/* Show the modal and overlay when showModal is true */
+.confirmation-modal.show {
+    display: block;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.Okbutton {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    height: 30%
+}
+
+.product-price {
+    margin-bottom: 15px;
+}
+
+.continuebt {
+    width: 150px;
+    height: 30px;
+    background-color: #208b1e;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    border-color: #208b1e;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.addtocartbt {
+    width: 150px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #208b1e;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    border-color: #208b1e;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+
+    .productcomp-title {
+        flex-direction: column;
+    }
+
+    .product {
+
+        margin-left: 0px;
+    }
+
+    .product-laptop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-hppavillon {
+        height: 300px;
+        width: 400px;
+
+    }
+
+    .productcomp-title {
+        width: 100%;
+    }
+
+    .productdetail {
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        margin-left: 0px;
+
+    }
+
+    .product {
+
+        margin-left: 00px;
+    }
+
+    .productcomp-name {
+        margin-left: 00px;
+        text-align: center;
+    }
+
+    .product-laptop img {
+
+        height: 250px;
+        width: 350px;
+        margin-left: 0px;
+    }
+
+    .product-hppavillon {
+
+        height: 250px;
+        width: 350px;
+    }
+
+    .quantity {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-span {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-model {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-price {
+        font-size: 20px;
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-quantity1 {
+        margin-bottom: 20px;
+    }
+
+}

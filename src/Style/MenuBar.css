@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.MenuBar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.logoImage {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.logoImage1 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logoTitle {
+    color: #208b1e;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 300px;
+    
+}
+
+.menu-li {
+    font-size: 20px;
+    color: #208b1e;
+    font-weight: bold;
+    margin-left: 70px;
+    cursor: pointer;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #208b1e;
+      
+}
+.orderDetailModal {
+    width: 20%;
+    height: fit-content;
+    border: 2px solid #208b1e;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+   .buttonDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalButtons {
+    width: 90%;
+    height: 30px;
+    background-color: #208b1e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.responsive-bar {
+    opacity: 0;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+    .navbar {
+        opacity: 0;
+
+    }
+
+    .responsive-bar {
+        opacity: 1;
+
+    }
+
+    .menu-ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #308b1e;
+        z-index: 2;
+    }
+
+    .menuimg {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        margin-left: 90px;
+
+    }
+
+    .menu-ul.active {
+        display: flex;
+    }
+
+    .menu-ul li {
+        margin: 10px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-ul li :hover {
+        background-color: #208b1e;
+        color: white;
+
+    }
+.loginBtn{ 
+    background-color: #ffffff;
+}
+    .logoImage {
+        position: absolute;
+        margin-left: -90px;
+    }
+
+    .logoImage1 {
+        position: absolute;
+        margin-left: -140px;
+   
+     
+      
+    }
+    .menu-ul {
+      
+        margin-right: 0px;
+        
+    }
+}

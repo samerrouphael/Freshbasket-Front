@@ -1,0 +1,116 @@
+/* ----------- Vendor INfo--------------------------------- */
+.vendor-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.vendortitle {
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vendor-image {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.btn-update-info{
+    background-color:#308b1e;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.btn-delete-info{
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-delete-info2{
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.btn-delete1 {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   
+    cursor: pointer;
+}
+
+.button-containor {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 
+---------------------------------------------------------- */
+/* -------------------Vendor Table------------------------------ */
+
+
+.order-title {
+    text-align: center;
+    font-size: 35px;
+    color: #308b1e;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.vendor-order {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+.button-containor {
+        display: flex;
+        flex-direction: column;
+       
+ }
+ .btn-delete1 {
+    margin-left: 0px;
+ }   
+    
+}

@@ -1,0 +1,219 @@
+.orderContainer {
+    width: 90%;
+    height: fit-content;
+    padding: 15px;
+    background-color: #f2f3f8;
+    border: none;
+    border-radius: 15px;
+    font-family: Itim;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.custTitle {
+    color: #208b1e;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+.orderedProductInfo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+
+}
+
+.CutomerOrderContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #208b1e;
+}
+
+.productImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.orderProductName {
+    width: 150px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.bin {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.colDiv {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.orderInfoDiv {
+
+    padding: 15px;
+    background-color: #f2f3f8;
+    border: none;
+    border-radius: 15px;
+    font-family: Itim;
+    margin-bottom: 15px;
+}
+
+.summaryTable {
+    border: none;
+}
+
+.summaryTd {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.totalCont {
+    display: flex;
+    border-top: 1px solid #208b1e;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.shippingDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoFlex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+}
+
+.orderTitle {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+.OkOrder{
+    background-color:#308b1e;
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+   
+    }
+    .OkOrder2{
+       
+        background-color:#f8f8f8;
+        border: none;
+        height: 30px;
+        width: 100px;
+        color: #308b1e;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border-style: double;
+    
+    }
+
+.orderInfoCont {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid #208b1e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.selectCountry {
+    width: 325px;
+    height: 40px;
+}
+
+.placeOrderBtn {
+    width: 150px;
+    height: 40px;
+    background-color: #208b1e;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    .shippingDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orderContainer {
+        width: 92%;
+        height: fit-content;
+        padding: 0px;
+
+
+    }
+
+    .colDiv {
+
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .orderContainer {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .buttonorder {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .displayFlex {
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .productImg {
+        width: 140px;
+        height: 140px;
+    }
+
+    .bin {
+        width: 30px;
+        height: 30px;
+        margin-left: 100px;
+    }
+
+    .custTitle {margin-top: 20px;
+    margin-left: 20px;}
+}

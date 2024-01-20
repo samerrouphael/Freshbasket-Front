@@ -1,0 +1,252 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #208B1E;
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.contact-callcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-callcenter img {
+    
+    width: fit-content;
+    border-radius: 20%;
+
+}
+
+.contact-title {
+    color: #208B1E;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-message p {
+    color: #208B1E;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info input {
+    width: 200px;
+    height: 20px;
+    border-radius: 25px;
+    border: 2px solid #208B1E;
+    padding: 10px;
+}
+
+.contact-name {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.contact-lastname {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.message {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #208B1E;
+    padding: 10px;
+}
+
+.submit {
+    background-color: #208B1E;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: row;
+    color: #208B1E;
+    margin-top: 10px;
+}
+
+.contact-email img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+.contact h1 {
+    color: #208B1E;
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+}
+.contact-socialmedia {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  }
+.contact-callcenter2 {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+    color: #208B1E;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-callcenter2 img {
+    border-radius: 20%;
+
+}
+
+.contact-email1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    color: #208B1E;
+    margin-top: 10px;
+}
+.find img{ 
+    height: 220px;
+    width: 300px;
+
+}
+.find h1{ 
+    color: #208B1E;
+}
+
+.contact-email1 img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+.contact-back2 {
+    height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    width: 100%;
+    border-radius: 25px;
+   
+}
+.contact{
+    margin-right: 300px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+
+    }
+    .contact-callcenter img {
+        height: 250px;
+        width: 375px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .contact-info {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-message {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .contact-name {
+
+        margin-right: 0px;
+    }
+
+    .contact-socialmedia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .contact-callcenter2 {
+        margin-top: 50px;
+        margin-left: 0px;
+
+
+    }
+
+    .message {
+        width: 200px;
+        height: 100px;
+    }
+
+    
+    .contact h1 {
+        margin-left: 0px;
+    }
+
+    .contact-back {
+        margin-top: 20px;
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    .contact-back2 {
+        height: 100vh;
+        margin-top: 0px;
+        background-color: #F8F8F8;
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
+        .contact{
+        margin-right: 0px;
+    }
+}

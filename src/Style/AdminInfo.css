@@ -1,0 +1,131 @@
+.admin-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.admintitle {
+    text-align: center;
+    font-size: 35px;
+    color: #208b1e;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.admin-image {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-delete {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.button-containor {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tableDes {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: 1px solid #208b1e;
+}
+
+.tableDes td {
+    padding: 10px;
+    border: 1px solid #208b1e;
+}
+
+/* ---------------------------AdminProduct */
+.enter-product {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.enter-product button {
+    margin-left: 20px;
+}
+
+.Product-input {
+    width: 100px;
+    height: 20px;
+    border-radius: 25px;
+    border: 2px solid #208b1e;
+    padding: 10px;
+}
+
+.productbtn-delete {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 175px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+th, td {
+    padding: 7px;
+  }
+  .updateModal{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #208b1e;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  
+  .updateModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .updateModal .close:hover,
+  .updateModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .product-image{
+    width: 150px;
+    height: 150px;
+  }
+  
