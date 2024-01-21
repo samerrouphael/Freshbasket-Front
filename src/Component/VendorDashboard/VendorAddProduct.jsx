@@ -13,7 +13,7 @@ const VendorAddProduct = () => {
   const fetchVendorName = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/vendor/getVendorNameByEmail/${vendorEmail}`
+        `http://localhost:8000/vendors/getVendorNameByEmail/${vendorEmail}`
       ); // Replace '/your-backend-route/' with your actual backend route
       const data = await response.json();
 

@@ -64,15 +64,18 @@ const OrderPage = () => {
         const response = await axios.get(
           `http://localhost:8000/products/getProductById/${item.id}`
         );
-
-        const product = {
-          image: response.data[0].image,
-          productName: response.data[0].name,
-          price: response.data[0].price,
-          quantity: item.quantity,
+        console.log(response.data)
+        if (response.data.length > 0) {
+          const product = {
+            image: response.data[0].image,
+            productName: response.data[0].name,
+            price: response.data[0].price,
+            quantity: item.quantity,
+          };
+          productDetails.push(product);
         };
 
-        productDetails.push(product);
+       
       }
     } catch (error) {
       console.error(error);
@@ -182,7 +185,7 @@ const OrderPage = () => {
   };
 
   return (
-    
+
     <div className="orderPage">
       <MenuBar />
       <div className="orderContainer">
@@ -577,11 +580,11 @@ const OrderPage = () => {
                 placeholder="Street Address"
                 onChange={(e) => setStreetAddress(e.target.value)}
               />
-              <div className="buttonorder"> 
-              <button className="placeOrderBtn" onClick={handleAddShipping}>
-                {" "}
-                Place Order
-              </button>
+              <div className="buttonorder">
+                <button className="placeOrderBtn" onClick={handleAddShipping}>
+                  {" "}
+                  Place Order
+                </button>
               </div>
             </div>
           </div>

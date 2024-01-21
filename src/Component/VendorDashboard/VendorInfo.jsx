@@ -19,7 +19,7 @@ const VendorInfo = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/vendor/getVendorByEmail/${email}`
+                    `http://localhost:8000/vendors/getVendorByEmail/${email}`
                 );
                 const fetchedVendor = response.data[0]; // Assuming the API response returns an array
 

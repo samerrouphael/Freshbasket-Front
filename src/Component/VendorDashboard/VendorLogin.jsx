@@ -9,7 +9,7 @@ const VendorLogin = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/vendor/vendorLogin",
+        "http://localhost:8000/vendors/vendorLogin",
         {
           email: email,
           password: password,
@@ -22,7 +22,7 @@ const VendorLogin = () => {
         if (data && data.message === "Vendor logged in successfully") {
           localStorage.removeItem("vendorEmail");
           localStorage.setItem("vendorEmail", email);
-          window.location.href = "/VendorDash";
+          window.location.href = "/vendorDash";
         } else {
           alert("Incorrect email or password");
         }
