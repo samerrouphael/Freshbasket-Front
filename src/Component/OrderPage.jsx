@@ -55,6 +55,7 @@ const OrderPage = () => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedCart);
   }, []);
+ 
 
   const fetchProductDetails = async () => {
     const productDetails = [];
@@ -74,8 +75,6 @@ const OrderPage = () => {
           };
           productDetails.push(product);
         };
-
-       
       }
     } catch (error) {
       console.error(error);
@@ -95,7 +94,7 @@ const OrderPage = () => {
 
     getProductDetails();
   }, [cartItems]);
-
+  
   const handleAddShipping = async () => {
     const emailFromLocalStorage = localStorage.getItem("email");
 

@@ -11,6 +11,7 @@ const ProductsPage = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [noProductsMessage, setNoProductsMessage] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const fetchProducts = async (category = "") => {
     try {
@@ -48,6 +49,16 @@ const ProductsPage = () => {
       console.error("Error fetching categories:", error);
     }
   };
+  const getProductByName = async () => {
+    try {
+      const response = await axios.get(
+        `http://localhost:8000/products/getProductByName/${searchTerm}`
+      );
+      setProducts(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const handleCategoryChange = (event) => {
     const selectedValue = event.target.value;
@@ -77,12 +88,15 @@ const ProductsPage = () => {
             </option>
           ))}
         </select>
-        <input
-          type="text"
-          className="inputProduct"
-          placeholder="Search Product"
-                  
+        <div className="search">
+        <input type="text" className="inputProduct" placeholder="Search Product"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
+        <button className="search-bt" onClick={getProductByName}>
+          Search
+        </button>
+        </div>
       </div>
       <div className="allProducts">
         {/* Display products or message */}

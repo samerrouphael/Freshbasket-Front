@@ -24,6 +24,7 @@ const OrderedProduct = ({ image, productName, price, quantity, removeFromCart })
           alt="Remove"
           onClick={handleRemoveFromCart}
         />
+        
       </div>
     </div>
   );

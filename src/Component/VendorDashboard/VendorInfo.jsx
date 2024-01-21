@@ -150,7 +150,7 @@ const VendorInfo = () => {
                 <button type="button" className="btn-update-info" onClick={handleUpdate}>
                     Update Info
                 </button>
-                <button type="button" className="btn-delete-info2" onClick={handleDelete}>
+                <button type="button" className="info-delete" onClick={handleDelete}>
                     Delete Info
                 </button>
             </div>

@@ -65,7 +65,7 @@ const AdminOrderDetails = () => {
                 <div className="button-containor">
                 <button
                       type="button"
-                      className="submitbt"
+                      className="productbtn-delete"
                       onClick={() => handleUpdateOrder(order._id)}
                     >
                       Cancel Order

@@ -18,7 +18,17 @@
     font-size: 15px;
     font-family: Itim;
 }
-
+.search-bt{
+    width: 100px;
+    height: 30px;
+  background-color: #ffffff;
+  color: #208b1e;
+  
+  border-radius: 20px;
+    font-size: 15px;
+  border-color:#208b1e;
+  cursor: pointer;
+}
 .inputProduct {
     width: 150px;
     height: 15px;
@@ -35,7 +45,10 @@
     margin-bottom: 30px;
     margin-right: 200px;
 }
-
+.search{ 
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (min-width: 360px) and (max-width: 1024px) {
     .selectCategory {
@@ -44,6 +57,7 @@
 
     .inputProduct {
         width: 100px;
+        margin-left: 15px;
 
     }
 
