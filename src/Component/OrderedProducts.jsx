@@ -4,12 +4,13 @@ import bin from "../images/bin.svg";
 
 const OrderedProduct = ({ image, productName, price, quantity, removeFromCart }) => {
   const totalPrice = price * quantity;
-  
+
   const handleRemoveFromCart = () => {
     console.log("Removing from cart");
     removeFromCart(); // Invoke removeFromCart function when the bin icon is clicked
   };
-  
+
+
   return (
     <div className="orderedProductInfo">
       <img src={image} alt="product Image" className="productImg" />
@@ -24,7 +25,7 @@ const OrderedProduct = ({ image, productName, price, quantity, removeFromCart })
           alt="Remove"
           onClick={handleRemoveFromCart}
         />
-        
+
       </div>
     </div>
   );

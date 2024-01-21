@@ -63,7 +63,8 @@ const ShippingDetails = () => {
             <td>Postal Code</td>
             <td>Street Adress</td>
             <td>Total Price</td>
-            <td>Date</td>
+            
+            
             
             <td>Actions</td>
           </tr>
@@ -78,10 +79,8 @@ const ShippingDetails = () => {
               <td>{shipping.postalCode} </td>
               <td>{shipping.streetAddress} </td>
               <td>{shipping.totalPrice} </td>
-              <td>{shipping.date} </td>
-             
-
-              <td>
+                   
+                 <td>
                 <div className="button-containor">
                 
                   <button

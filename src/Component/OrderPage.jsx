@@ -258,7 +258,7 @@ const OrderPage = () => {
                 type="text"
                 className="orderInfoCont"
                 placeholder="Phone Number"
-                value={clientData.phone}
+                value={clientData.phoneNUmber}
                 onChange={(e) => setPhoneNUmber(e.target.value)}
               />
             </div>
