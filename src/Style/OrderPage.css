@@ -40,15 +40,15 @@
 }
 
 .productImg {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .orderProductName {
     width: 150px;
-    margin-right: 10px;
+    margin-right: 70px;
     font-size: 18px;
 }
 
