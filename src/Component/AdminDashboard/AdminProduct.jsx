@@ -1,7 +1,6 @@
 import "../../Style/VendorInfo.css";
 import axios from "axios";
 import back from "../../images/back.svg";
-
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 const AdminProduct = () => {

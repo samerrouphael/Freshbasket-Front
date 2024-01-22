@@ -2,6 +2,7 @@ import React from "react";
 import "../Style/OrderPage.css";
 import bin from "../images/bin.svg";
 
+
 const OrderedProduct = ({ image, productName, price, quantity, removeFromCart }) => {
   const totalPrice = price * quantity;
 
