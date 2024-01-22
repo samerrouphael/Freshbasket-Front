@@ -168,9 +168,16 @@ const OrderPage = () => {
     }
     return subtotal;
   };
+  const calculatetax = () => {
+    let tax = 0;
+     {
+      tax += 0.1*subtotal;
+    }
+    return tax;
+  };
   const subtotal = calculateSubtotal();
   const shipping = 5;
-  const tax = 1;
+  const tax = calculatetax();
   const total = subtotal + shipping + tax;
 
   const removeFromCart = (productId) => {
@@ -217,7 +224,7 @@ const OrderPage = () => {
 
             <tr>
               <td className="summaryTd">Tax</td>
-              <td className="summaryTd"> 1$</td>
+              <td className="summaryTd">{tax} $</td>
             </tr>
           </table>
 
