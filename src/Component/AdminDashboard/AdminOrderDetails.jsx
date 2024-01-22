@@ -49,8 +49,7 @@ const AdminOrderDetails = () => {
             <td>Product ID</td>
             <td>Date</td>
             <td>Total Price</td>
-            <td>Name</td>
-            
+            <td>status</td>
             <td>Actions</td>
           
             
@@ -61,7 +60,6 @@ const AdminOrderDetails = () => {
               <td>{order.productsId} </td>
               <td>{order.date} </td>
               <td>{order.totalPrice} </td>
-             
               <td>{order.status} </td>   
               <td>
                 <div className="button-containor">

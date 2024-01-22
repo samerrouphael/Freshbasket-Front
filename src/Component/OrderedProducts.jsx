@@ -3,6 +3,7 @@ import "../Style/OrderPage.css";
 import bin from "../images/bin.svg";
 
 
+
 const OrderedProduct = ({ image, productName, price, quantity, removeFromCart }) => {
   const totalPrice = price * quantity;
 
@@ -26,6 +27,7 @@ const OrderedProduct = ({ image, productName, price, quantity, removeFromCart })
           alt="Remove"
           onClick={handleRemoveFromCart}
         />
+        
 
       </div>
     </div>
