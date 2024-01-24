@@ -18,6 +18,7 @@ const ShippingDetails = () => {
         console.error("Error:", error);
       });
   };
+  console.log(data)
   const handleDelete = (id) => {
     axios
       .delete(`http://localhost:8000/shipping/deleteShippingById/${id}`)

@@ -60,7 +60,7 @@ const AdminProduct = () => {
   const deleteProduct = async (productId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/products/deleteProductById/${productId}`
+        `http://localhost:8000/Products/deleteProductById/${productId}`
       );
 
       getAllProducts();

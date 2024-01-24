@@ -63,11 +63,13 @@ const OrderPage = () => {
     try {
       for (const item of cartItems) {
         const response = await axios.get(
-          `http://localhost:8000/products/getProductById/${item.id}`
+          `http://localhost:8000/Products/getProductById/${item.id}`
         );
         console.log(response.data)
         if (response.data.length > 0) {
+          
           const product = {
+            id: response.data[0]._id,
             image: response.data[0].image,
             productName: response.data[0].name,
             price: response.data[0].price,
@@ -122,7 +124,7 @@ const OrderPage = () => {
         cityName,
         postalCode,
         streetAddress,
-        totalPrice,
+        totalPrice:total,
         status: "pending",
       };
 
@@ -176,19 +178,11 @@ const OrderPage = () => {
     return tax;
   };
   const subtotal = calculateSubtotal();
-  const shipping = 5;
+  const shipping = 2;
   const tax = calculatetax();
   const total = subtotal + shipping + tax;
 
-  const removeFromCart = (productId) => {
-    setCartItems((prevCartItems) => {
-      const updatedCartItems = prevCartItems.filter(
-        (item) => item.id !== productId
-      );
-      localStorage.setItem("cart", JSON.stringify(updatedCartItems));
-      return updatedCartItems;
-    });
-  };
+  
 
   return (
 
@@ -200,11 +194,12 @@ const OrderPage = () => {
           {productsWithDetails.map((product, index) => (
             <OrderedProducts
               key={index}
+              id={product.id}
               image={product.image}
               productName={product.productName}
               price={product.price}
               quantity={product.quantity}
-              removeFromCart={() => removeFromCart(product.id)}
+             
             />
           ))}
         </div>
@@ -219,18 +214,18 @@ const OrderPage = () => {
             </tr>
             <tr>
               <td className="summaryTd">Shipping</td>
-              <td className="summaryTd"> 5$</td>
+              <td className="summaryTd"> 2$</td>
             </tr>
 
             <tr>
               <td className="summaryTd">Tax</td>
-              <td className="summaryTd">{tax} $</td>
+              <td className="summaryTd">{tax.toFixed(2)}$</td>
             </tr>
           </table>
 
           <div className="totalCont">
             <div className="summaryTd">Total</div>
-            <div className="summaryTd">{total}$</div>
+            <div className="summaryTd">{total.toFixed(2)}$</div>
           </div>
         </div>
 
@@ -244,28 +239,28 @@ const OrderPage = () => {
                 type="text"
                 className="orderInfoCont wid"
                 placeholder="First Name"
-                value={clientData.firstName}
+                
                 onChange={(e) => setFirstName(e.target.value)}
               />
               <input
                 type="text"
                 className="orderInfoCont wid"
                 placeholder="Last Name"
-                value={clientData.lastName}
+                
                 onChange={(e) => setLastName(e.target.value)}
               />
               <input
                 type="text"
                 className="orderInfoCont"
                 placeholder="Email"
-                value={emailFromLocalStorage}
+               
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 type="text"
                 className="orderInfoCont"
                 placeholder="Phone Number"
-                value={clientData.phoneNUmber}
+                
                 onChange={(e) => setPhoneNUmber(e.target.value)}
               />
             </div>
