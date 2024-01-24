@@ -24,14 +24,15 @@
     justify-content: center;
 }
 
+
 .btn-delete {
     background-color: red;
     border: none;
     height: 40px;
     width: 170px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 10px;
     font-size: 20px;
     margin-left: 50px;
@@ -42,7 +43,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+
 }
 
 .tableDes {
@@ -57,7 +58,9 @@
 .tableDes td {
     padding: 10px;
     border: 1px solid #208b1e;
+
 }
+
 
 /* ---------------------------AdminProduct */
 .enter-product {
@@ -85,8 +88,8 @@
     height: 40px;
     width: 175px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -109,23 +112,23 @@ th, td {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow-y: auto;
   }
-  
+
   .updateModal .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .updateModal .close:hover,
   .updateModal .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .product-image{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
-  
+

@@ -48,7 +48,7 @@
 
 .orderProductName {
     width: 150px;
-    margin-right: 70px;
+    margin-right: 55px;
     font-size: 18px;
 }
 
@@ -163,6 +163,19 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.remove-btn{
+    width: 100px;
+    height: 45px;
+    background-color:red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
 }
 
 @media screen and (min-width: 360px) and (max-width: 1024px) {

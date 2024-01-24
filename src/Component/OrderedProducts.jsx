@@ -52,10 +52,10 @@ const OrderedProduct = ({id, image, productName, price, quantity, removeFromCart
         /> */}
         <button
           type="button"
-          className="productbtn-delete"
+          className="remove-btn"
           onClick={ deleteProduct}
         >
-          Delete Product
+          Remove
         </button>
 
       </div>

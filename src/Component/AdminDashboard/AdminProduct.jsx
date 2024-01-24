@@ -154,14 +154,14 @@ const AdminProduct = () => {
                     <div className="button-container">
                       <button
                         type="button"
-                        className="submitbt"
+                        className="submitbt1"
                         onClick={() => handleUpdate(product)} // Pass the vendor object to handleUpdate
                       >
                         Update Info
                       </button>
                       <button
                         type="button"
-                        className="productbtn-delete"
+                        className="productbtn-delete1"
                         onClick={() => deleteProduct(product._id)}
                       >
                         Delete Product

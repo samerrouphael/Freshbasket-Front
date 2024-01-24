@@ -90,7 +90,7 @@ const AdminClient = () => {
                   <div className="button-container">
                     <button
                       type="button"
-                      className="submitbt"
+                      className="submitbt1"
                       onClick={() => handleUpdate(cient)} // Pass the cient object to handleUpdate
                     >
                       Update Info
@@ -98,7 +98,7 @@ const AdminClient = () => {
 
                     <button
                       type="button"
-                      className="btn-delete1"
+                      className="productbtn-delete1"
                       onClick={() => handleDelete(cient._id)}
                     >
                       Delete Info
@@ -169,7 +169,7 @@ const AdminClient = () => {
               }
             />
           </div>
-          <button className="vendor-add-btn" onClick={handleUpdateSubmit}>
+          <button className="submitbt1" onClick={handleUpdateSubmit}>
             {" "}
             Update Client
           </button>

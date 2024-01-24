@@ -119,7 +119,7 @@
          </div>
 
          <div className="table1">
-           <table>
+           <table className="vendor-table">
              <thead>
                <tr>
                  <th>Name</th>
@@ -149,17 +149,17 @@
                    </td>
                    <td> {product.quantity}</td>
                    <td>
-                     <div className="button-container">
+                     <div className="button-containor">
                        <button
                          type="button"
-                         className="submitbt"
+                         className="submitbt1"
                          onClick={() => handleUpdate(product)}  Pass the vendor object to handleUpdate
                        >
                          Update Info
                        </button>
                        <button
                          type="button"
-                         className="productbtn-delete"
+                         className="productbtn-delete1"
                          onClick={() => deleteProduct(product._id)}
                        >
                          Delete Product

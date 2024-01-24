@@ -88,7 +88,7 @@ const AdminVendors = () => {
                   <div className="button-container">
                     <button
                       type="button"
-                      className="submitbt"
+                      className="submitbt1"
                       onClick={() => handleUpdate(vendor)} // Pass the vendor object to handleUpdate
                     >
                       Update Info
@@ -180,7 +180,7 @@ const AdminVendors = () => {
               }
             />
           </div>
-          <button className="vendor-add-btn" onClick={handleUpdateSubmit}>
+          <button className="" onClick={handleUpdateSubmit}>
             {" "}
             Update Vendor
           </button>

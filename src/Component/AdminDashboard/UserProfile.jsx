@@ -61,7 +61,7 @@ const UserProfile = () => {
                 </div>
             </div>
             <div className="button-containor">
-                <button type="button" className="submitbt">
+                <button type="button" className="submitbt1">
                     Update Account
                 </button>
 

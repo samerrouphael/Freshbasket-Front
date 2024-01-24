@@ -8,6 +8,20 @@
     margin-top: 20px;
 }
 
+.vendor-table {
+
+    margin-top: 50px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: 1px solid #208b1e;
+}
+
+.vendor-table td {
+    padding: 10px;
+    border: 1px solid #208b1e;
+}
+
 .vendortitle {
     text-align: center;
     font-size: 35px;
@@ -24,68 +38,96 @@
     text-align: center;
     justify-content: center;
 }
-.btn-update-info{
-    background-color:#308b1e;
-    border: none;
-    height: 40px;
-    width: 170px;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
 
-}
-.btn-delete-info{
-    background-color: red;
+.btn-update-info {
+    background-color: #308b1e;
     border: none;
     height: 40px;
     width: 170px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
 }
-.info-delete{
-    background-color: red;
+
+.submitbt1 {
+    background-color: #308b1e;
     border: none;
     height: 40px;
     width: 170px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
-    margin-left: 15px;  
 }
-.btn-delete-info2{
+
+.productbtn-delete1 {
     background-color: red;
     border: none;
     height: 40px;
     width: 170px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-delete-info {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.info-delete {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+   
+}
+
+.btn-delete-info2 {
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
     margin-left: 15px;
 }
+
 .btn-delete1 {
     background-color: red;
     border: none;
     height: 40px;
     width: 170px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     border-radius: 10px;
     font-size: 20px;
-   
+
     cursor: pointer;
 }
 
@@ -93,7 +135,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 /* 
 ---------------------------------------------------------- */
@@ -117,13 +163,14 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 1024px) {
-.button-containor {
+    .button-containor {
         display: flex;
         flex-direction: column;
-       
- }
- .info-delete {
-    margin-left: 0px;
- }   
-    
+
+    }
+
+    .info-delete {
+        margin-left: 0px;
+    }
+
 }

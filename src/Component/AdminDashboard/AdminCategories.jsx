@@ -101,7 +101,7 @@ const AdminCategories = () => {
                   <td>
                     <button
                       type="button"
-                      className="submitbt"
+                      className="submitbt1"
                       onClick={() => updateCategory(category._id)}
                     >
                       Update
