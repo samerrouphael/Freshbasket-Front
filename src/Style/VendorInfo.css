@@ -16,7 +16,11 @@
     text-align: center;
     border: 1px solid #208b1e;
 }
-
+.button-container{ 
+    display: flex;
+    flex-direction:column
+    ;
+}
 .vendor-table td {
     padding: 10px;
     border: 1px solid #208b1e;
