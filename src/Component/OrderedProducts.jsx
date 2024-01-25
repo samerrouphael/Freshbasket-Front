@@ -50,6 +50,7 @@ const OrderedProduct = ({id, image, productName, price, quantity, removeFromCart
           onClick={handleRemoveFromCart}
 
         /> */}
+        <div className="remove">
         <button
           type="button"
           className="remove-btn"
@@ -57,7 +58,7 @@ const OrderedProduct = ({id, image, productName, price, quantity, removeFromCart
         >
           Remove
         </button>
-
+        </div>
       </div>
     </div>
   );
