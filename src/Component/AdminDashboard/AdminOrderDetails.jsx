@@ -20,7 +20,7 @@ const AdminOrderDetails = () => {
   useEffect(() => {
     fetchOrderDetails();
   }, []);
-  
+
   const handleUpdateOrder = (id) => {
     console.log("Updating order with ID:", id); // Add this line to log the ID
     axios
@@ -32,7 +32,7 @@ const AdminOrderDetails = () => {
         console.error("Error:", error);
       });
   };
-  
+
   return (
     <div className="AdminVendors">
       <div className="back">
@@ -51,8 +51,8 @@ const AdminOrderDetails = () => {
             <td>Total Price</td>
             <td>status</td>
             <td>Actions</td>
-          
-            
+
+
           </tr>
           {data.map((order) => (
             <tr key={order._id}>
@@ -60,17 +60,17 @@ const AdminOrderDetails = () => {
               <td>{order.productsId} </td>
               <td>{order.date} </td>
               <td>{order.totalPrice} </td>
-              <td>{order.status} </td>   
+              <td>{order.status} </td>
               <td>
                 <div className="button-containor">
-                <button
-                      type="button"
-                      className="productbtn-delete"
-                      onClick={() => handleUpdateOrder(order._id)}
-                    >
-                      Cancel Order
-                    </button>
-                 
+                  <button
+                    type="button"
+                    className="productbtn-delete"
+                    onClick={() => handleUpdateOrder(order._id)}
+                  >
+                    Cancel Order
+                  </button>
+
                 </div>
               </td>
             </tr>

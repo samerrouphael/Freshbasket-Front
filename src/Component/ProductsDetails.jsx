@@ -5,7 +5,7 @@ import arrowup from "../images/arrowup.svg";
 import arrowdown from "../images/arrowdown.svg";
 import { useParams } from 'react-router-dom'; // Import useParams from react-router-dom
 
-const ProductDetails = ({ image, name, vendor, description, price }) => {
+const ProductDetails = ({ image, name, vendorName, description, price }) => {
   const [quantity, setQuantity] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const { id } = useParams();
@@ -58,7 +58,7 @@ console.log ( " the id of the product " + id)
         <h1 className="productcomp-name"> {name}</h1>
         <div className="product-model">
           {" "}
-          <p className="product-bold"> By :</p> {vendor}{" "}
+          <p className="product-bold"> By :</p> {vendorName}{""}
         </div>
         <p className="product-model">
           {" "}

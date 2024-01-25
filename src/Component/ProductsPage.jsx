@@ -89,13 +89,13 @@ const ProductsPage = () => {
           ))}
         </select>
         <div className="search">
-        <input type="text" className="inputProduct" placeholder="Search Product"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button className="search-bt" onClick={getProductByName}>
-          Search
-        </button>
+          <input type="text" className="inputProduct" placeholder="Search Product"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button className="search-bt" onClick={getProductByName}>
+            Search
+          </button>
         </div>
       </div>
       <div className="allProducts">

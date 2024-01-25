@@ -31,6 +31,7 @@ const ProductComponent = () => {
           name={product.name}
           description={product.description}
           price={product.price}
+          vendorName={product.vendorName}
         />
       ) : (
         <p>Loading...</p>
