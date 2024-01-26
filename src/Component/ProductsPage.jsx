@@ -15,9 +15,9 @@ const ProductsPage = () => {
 
   const fetchProducts = async (category = "") => {
     try {
-      let url = "http://localhost:8000/products/getAllProduct";
+      let url = "https://fresh-basket.onrender.com/products/getAllProduct";
       if (category) {
-        url = `http://localhost:8000/products/getProductByCategory/${category}`;
+        url = `https://fresh-basket.onrender.com/products/getProductByCategory/${category}`;
       }
 
       const response = await axios.get(url);
@@ -41,7 +41,7 @@ const ProductsPage = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8000/category/getAllCategories"
+        "https://fresh-basket.onrender.com/category/getAllCategories"
       );
       const data = await response.json();
       setCategories(data); // Assuming the response returns an array of category objects
@@ -52,7 +52,7 @@ const ProductsPage = () => {
   const getProductByName = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/products/getProductByName/${searchTerm}`
+        `https://fresh-basket.onrender.com/products/getProductByName/${searchTerm}`
       );
       setProducts(response.data);
     } catch (error) {

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const AdminOrderDetails = () => {
   const [data, setData] = useState([]);
   const fetchOrderDetails = () => {
-    const apiUrl = "http://localhost:8000/orderDetail/getAllOrders";
+    const apiUrl = "https://fresh-basket.onrender.com/orderDetail/getAllOrders";
     axios
       .get(apiUrl)
       .then((response) => {
@@ -24,7 +24,7 @@ const AdminOrderDetails = () => {
   const handleUpdateOrder = (id) => {
     console.log("Updating order with ID:", id); // Add this line to log the ID
     axios
-      .put(`http://localhost:8000/orderDetail/cancelOrder/${id}`)
+      .put(`https://fresh-basket.onrender.com/orderDetail/cancelOrder/${id}`)
       .then((response) => {
         fetchOrderDetails(); // Refresh the client list after updating order
       })

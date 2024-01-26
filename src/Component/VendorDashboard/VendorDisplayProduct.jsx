@@ -12,7 +12,7 @@ const VendorDisplayProduct = () => {
   const getAllProducts = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/Products/getProductByVendorName/${vendorName}`
+        `https://fresh-basket.onrender.com/Products/getProductByVendorName/${vendorName}`
 
       );
       console.log(response.data)
@@ -36,7 +36,7 @@ const VendorDisplayProduct = () => {
       // Perform the update operation using selectedProduct data
       axios
         .put(
-          `http://localhost:8000/Products/updateProductById/${selectedProduct._id}`,
+          `https://fresh-basket.onrender.com/Products/updateProductById/${selectedProduct._id}`,
           selectedProduct
         )
         .then((response) => {
@@ -52,7 +52,7 @@ const VendorDisplayProduct = () => {
   const getProductByName = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/products/getProductByName/${searchTerm}`
+        `https://fresh-basket.onrender.com/products/getProductByName/${searchTerm}`
       );
       setProducts(response.data);
     } catch (error) {
@@ -62,7 +62,7 @@ const VendorDisplayProduct = () => {
   const deleteProduct = async (productId) => {
     try {
       const response = await axios.delete(
-        `http:localhost:8000/Products/deleteProductById/${productId}`
+        `https://fresh-basket.onrender.com/Products/deleteProductById/${productId}`
       );
       getAllProducts();
     } catch (error) {
@@ -72,7 +72,7 @@ const VendorDisplayProduct = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "http:localhost:8000/category/getAllCategories"
+        "https://fresh-basket.onrender.com/category/getAllCategories"
       );
       const data = await response.json();
       setCategories(data);

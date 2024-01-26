@@ -11,7 +11,7 @@ const AdminCategories = () => {
   const fetchCategories = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/category/getAllCategories"
+        "https://fresh-basket.onrender.com/category/getAllCategories"
       );
       setCategories(response.data);
     } catch (error) {
@@ -22,7 +22,7 @@ const AdminCategories = () => {
   const addCategory = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/category/addCategory",
+        "https://fresh-basket.onrender.com/category/addCategory",
         { category: newCategory }
       );
       console.log("Category added:", response.data);
@@ -36,7 +36,7 @@ const AdminCategories = () => {
   const updateCategory = async (id) => {
     try {
       const response = await axios.put(
-        `http://localhost:8000/category/updateCategoryById/${id}`,
+        `https://fresh-basket.onrender.com/category/updateCategoryById/${id}`,
         {
           /* Updated category data */
         }
@@ -51,7 +51,7 @@ const AdminCategories = () => {
   const deleteCategory = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:8000/category/deleteCategoriesById/${id}`
+        `https://fresh-basket.onrender.com/category/deleteCategoriesById/${id}`
       );
       console.log("Category deleted");
       fetchCategories();

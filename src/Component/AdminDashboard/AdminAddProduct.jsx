@@ -12,7 +12,7 @@ const AdminAddProducts = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8000/category/getAllCategories"
+        "https://fresh-basket.onrender.com/category/getAllCategories"
       );
       const data = await response.json();
       setCategories(data); // Assuming the response returns an array of category objects
@@ -39,7 +39,7 @@ const AdminAddProducts = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/products/addProduct",
+        "https://fresh-basket.onrender.com/products/addProduct",
         {
           method: "POST",
           headers: {

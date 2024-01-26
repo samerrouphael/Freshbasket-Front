@@ -32,7 +32,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/client/addClient",
+        "https://fresh-basket.onrender.com/client/addClient",
         projectBody
       );
 

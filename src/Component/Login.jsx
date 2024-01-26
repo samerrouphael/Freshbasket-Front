@@ -15,7 +15,7 @@ const Login = () => {
   const handleClientLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/client/clientLogin",
+        "https://fresh-basket.onrender.com/client/clientLogin",
         {
           email: emailValue,
           password: passwordValue,

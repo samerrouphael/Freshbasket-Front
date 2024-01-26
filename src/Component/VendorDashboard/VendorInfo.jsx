@@ -19,7 +19,7 @@ const VendorInfo = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/vendors/getVendorByEmail/${email}`
+                    `https://fresh-basket.onrender.com/vendors/getVendorByEmail/${email}`
                 );
                 const fetchedVendor = response.data[0]; // Assuming the API response returns an array
 
@@ -52,7 +52,7 @@ const VendorInfo = () => {
     const handleUpdate = () => {
         axios
             .put(
-                `http://localhost:8000/vendors/updateVendorByEmail/${email}`,
+                `https://fresh-basket.onrender.com/vendors/updateVendorByEmail/${email}`,
                 vendorData
             )
             .then((response) => {
@@ -65,7 +65,7 @@ const VendorInfo = () => {
 
     const handleDelete = () => {
         axios
-            .delete(`http://localhost:8000/vendors/deleteVendor/${email}`)
+            .delete(`https://fresh-basket.onrender.com/vendors/deleteVendor/${email}`)
             .then((response) => {
                 console.log("Vendor deleted:", response.data);
                 localStorage.removeItem("email");

@@ -13,7 +13,7 @@ const VendorAddProduct = () => {
   const fetchVendorName = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/vendors/getVendorNameByEmail/${vendorEmail}`
+        `https://fresh-basket.onrender.com/vendors/getVendorNameByEmail/${vendorEmail}`
       ); // Replace '/your-backend-route/' with your actual backend route
       const data = await response.json();
 
@@ -34,7 +34,7 @@ const VendorAddProduct = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8000/category/getAllCategories"
+        "https://fresh-basket.onrender.com/category/getAllCategories"
       );
       const data = await response.json();
       setCategories(data); // Assuming the response returns an array of category objects
@@ -57,7 +57,7 @@ const VendorAddProduct = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/products/addProduct",
+        "https://fresh-basket.onrender.com/products/addProduct",
         {
           method: "POST",
           headers: {

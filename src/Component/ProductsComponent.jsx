@@ -14,7 +14,7 @@ const ProductComponent = () => {
   const fetchProductById = async (productId) => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/products/getProductById/${productId}`
+        `https://fresh-basket.onrender.com/products/getProductById/${productId}`
       );
       setProduct(response.data[0]);
     } catch (error) {

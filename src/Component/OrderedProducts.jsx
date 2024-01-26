@@ -15,7 +15,7 @@ const OrderedProduct = ({id, image, productName, price, quantity, removeFromCart
   const getAllProducts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/products/getAllProduct"
+        "https://fresh-basket.onrender.com/products/getAllProduct"
       );
       setProducts(response.data);
     } catch (error) {
@@ -26,7 +26,7 @@ const OrderedProduct = ({id, image, productName, price, quantity, removeFromCart
     console.log(id)
     try {
       const response = await axios.delete(
-        `http://localhost:8000/Products/deleteProductById/${id}`
+        `https://fresh-basket.onrender.com/Products/deleteProductById/${id}`
       );
 
       getAllProducts();

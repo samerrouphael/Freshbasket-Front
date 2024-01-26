@@ -12,7 +12,7 @@ const LatestProducts = () => {
     async function fetchProducts() {
       try {
         const response = await axios.get(
-          "http://localhost:8000/products/getAllProduct"
+          "https://fresh-basket.onrender.com/products/getAllProduct"
         );
         setProducts(response.data);
       } catch (error) {

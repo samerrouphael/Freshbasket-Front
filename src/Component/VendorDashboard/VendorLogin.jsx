@@ -9,7 +9,7 @@ const VendorLogin = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/vendors/vendorLogin",
+        "https://fresh-basket.onrender.com/vendors/vendorLogin",
         {
           email: email,
           password: password,

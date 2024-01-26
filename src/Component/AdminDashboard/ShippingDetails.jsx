@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const ShippingDetails = () => {
   const [data, setData] = useState([]);
   const fetchShippingDetails = () => {
-    const apiUrl = "http://localhost:8000/shipping/getAllShippingOrders";
+    const apiUrl = "https://fresh-basket.onrender.com/shipping/getAllShippingOrders";
     axios
       .get(apiUrl)
       .then((response) => {
@@ -21,7 +21,7 @@ const ShippingDetails = () => {
   console.log(data)
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8000/shipping/deleteShippingById/${id}`)
+      .delete(`https://fresh-basket.onrender.com/shipping/deleteShippingById/${id}`)
       .then((response) => {
         fetchShippingDetails(); // Refresh the cient list after deletion
       })
@@ -35,7 +35,7 @@ const ShippingDetails = () => {
 
   const handleUpdateOrder = (id) => {
     axios
-      .put(`http://localhost:8000/shipping/cancelShipping`, { shippingId: id })
+      .put(`https://fresh-basket.onrender.com/shipping/cancelShipping`, { shippingId: id })
       .then((response) => {
         fetchShippingDetails(); // Refresh the client list after updating order
       })

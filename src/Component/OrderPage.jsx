@@ -32,7 +32,7 @@ const OrderPage = () => {
     if (emailFromLocalStorage) {
       axios
         .get(
-          `http://localhost:8000/client/getClientByEmail/${emailFromLocalStorage}`
+          `https://fresh-basket.onrender.com/client/getClientByEmail/${emailFromLocalStorage}`
         )
         .then((response) => {
           const clients = response.data;
@@ -63,7 +63,7 @@ const OrderPage = () => {
     try {
       for (const item of cartItems) {
         const response = await axios.get(
-          `http://localhost:8000/Products/getProductById/${item.id}`
+          `https://fresh-basket.onrender.com/Products/getProductById/${item.id}`
         );
         console.log(response.data)
         if (response.data.length > 0) {
@@ -130,7 +130,7 @@ const OrderPage = () => {
 
       try {
         const response = await fetch(
-          "http://localhost:8000/shipping/addShipping",
+          "https://fresh-basket.onrender.com/shipping/addShipping",
           {
             method: "POST",
             headers: {
@@ -142,7 +142,7 @@ const OrderPage = () => {
 
         if (response.ok) {
           const orderDetailResponse = await axios.post(
-            "http://localhost:8000/orderDetail/addOrderDetail",
+            "https://fresh-basket.onrender.com/orderDetail/addOrderDetail",
             orderDetailBody
           );
 

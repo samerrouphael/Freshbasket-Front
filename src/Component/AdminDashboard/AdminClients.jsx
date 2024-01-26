@@ -6,7 +6,7 @@ const AdminClient = () => {
   const [selectedClient, setSelectedClient] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const fetchClients = () => {
-    const apiUrl = "http://localhost:8000/client/getAllClients";
+    const apiUrl = "https://fresh-basket.onrender.com/client/getAllClients";
     axios
       .get(apiUrl)
       .then((response) => {
@@ -24,7 +24,7 @@ const AdminClient = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8000/client/deleteClientById/${id}`)
+      .delete(`https://fresh-basket.onrender.com/client/deleteClientById/${id}`)
       .then((response) => {
        
         fetchClients(); // Refresh the cient list after deletion
@@ -49,7 +49,7 @@ const AdminClient = () => {
       // Perform the update operation using selectedClient data
       axios
         .put(
-          `http://localhost:8000/client/updateClientById/${selectedClient._id}`,
+          `https://fresh-basket.onrender.com/client/updateClientById/${selectedClient._id}`,
           selectedClient
         )
         .then((response) => {

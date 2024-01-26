@@ -6,7 +6,7 @@ const AdminVendors = () => {
   const [selectedVendor, setSelectedVendor] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const fetchVendors = () => {
-    const apiUrl = "http://localhost:8000/vendors/getAllVendors";
+    const apiUrl = "https://fresh-basket.onrender.com/vendors/getAllVendors";
     axios
       .get(apiUrl)
       .then((response) => {
@@ -23,7 +23,7 @@ const AdminVendors = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8000/vendors/deleteVendorById/${id}`)
+      .delete(`https://fresh-basket.onrender.com/vendors/deleteVendorById/${id}`)
       .then((response) => {
         fetchVendors(); // Refresh the vendor list after deletion
       })
@@ -47,7 +47,7 @@ const AdminVendors = () => {
       // Perform the update operation using selectedVendor data
       axios
         .put(
-          `http://localhost:8000/vendors/updateVendorById/${selectedVendor._id}`,
+          `https://fresh-basket.onrender.com/vendors/updateVendorById/${selectedVendor._id}`,
           selectedVendor
         )
         .then((response) => {
