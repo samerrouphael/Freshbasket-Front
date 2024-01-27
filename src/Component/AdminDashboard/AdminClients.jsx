@@ -66,7 +66,7 @@ const AdminClient = () => {
     <div className="AdminClient">
       <div className="Admin-table">
         <p className="order-title"> Cients</p>
-        <table class="tableDes">
+        <table className="tableDes, vendor-table">
           <thead>
             <tr>
               <th>Name</th>

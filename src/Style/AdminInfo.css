@@ -45,7 +45,9 @@
     text-align: center;
 
 }
-
+.admin-info1{ 
+    margin-left: 50px;
+}
 .tableDes {
     margin-top: 50px;
     border-collapse: collapse;
@@ -93,6 +95,19 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+.admiaddvend-bt{
+    background-color:#208b1e;
+    border: none;
+    height: 40px;
+    width: 175px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
 }
 th, td {
     padding: 7px;

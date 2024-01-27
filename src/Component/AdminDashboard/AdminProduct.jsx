@@ -105,7 +105,7 @@ const AdminProduct = () => {
           <img src={back} className="back-img" />
         </Link>
       </div>
-      <div className="product">
+      <div className="product1">
         <p className="order-title">Product List</p>
         <div className="enter-product">
           <input
@@ -121,7 +121,7 @@ const AdminProduct = () => {
         </div>
 
         <div className="table1">
-          <table className="tableDes">
+          <table className="tableDes, vendor-table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -130,7 +130,7 @@ const AdminProduct = () => {
                 <th>Category</th>
                 <th>Vendor Name</th>
                 <th>Image</th>
-                <th>Quantity</th>
+                <th>Quantity(kg)</th>
                 <th> Action </th>
               </tr>
             </thead>

@@ -125,7 +125,7 @@ const AdminInfo = () => {
         </div>
       </div>
       <div className="button-containor">
-        <button type="button" className="submitbt" onClick={addVendor}>
+        <button type="button" className="admiaddvend-bt" onClick={addVendor}>
           Add Vendor
         </button>
       </div>

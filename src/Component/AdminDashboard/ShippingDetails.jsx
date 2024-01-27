@@ -53,7 +53,7 @@ const ShippingDetails = () => {
       <div className="Admin-table">
         <p className="order-title"> Client Shipping Details</p>
 
-        <table className="tableDes">
+        <table className="tableDes, vendor-table">
           <tr>
             <td>Name</td>
             <td>Last-Name</td>

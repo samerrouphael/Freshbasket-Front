@@ -103,7 +103,7 @@ const VendorDisplayProduct = () => {
 
   return (
     <div>
-      <div className="product">
+      <div className="product2">
         <p className="order-title">Product List</p>
         <div className="enter-product">
         <input
@@ -128,7 +128,7 @@ const VendorDisplayProduct = () => {
                 <th>Category</th>
                 <th>Vendor Name</th>
                 <th>Image</th>
-                <th>Quantity</th>
+                <th>Quantity(Kg)</th>
                 <th> Action </th>
               </tr>
             </thead>

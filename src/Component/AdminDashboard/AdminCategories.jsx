@@ -86,7 +86,7 @@ const AdminCategories = () => {
           </button>
         </div>
         <div className="table1">
-          <table className="tableDes">
+        <table className="tableDes, vendor-table">
             <thead>
               <tr>
                 <th>Category</th>

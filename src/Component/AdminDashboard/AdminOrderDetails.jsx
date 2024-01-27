@@ -43,7 +43,7 @@ const AdminOrderDetails = () => {
       <div className="Admin-table">
         <p className="order-title"> Order Details</p>
 
-        <table className="tableDes">
+        <table className="tableDes, vendor-table">
           <tr>
             <td>Email</td>
            
