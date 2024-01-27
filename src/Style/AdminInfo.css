@@ -146,4 +146,15 @@ th, td {
     width: 100px;
     height: 100px;
   }
+  @media screen and (min-width: 360px) and (max-width: 1024px) {
+    .admin-info1{ 
+        margin-left: 0px;
+    } 
+    .admin-info1{ 
+        margin-left: 0px;
+    }
 
+    .admiaddvend-bt{
+        margin-left: 0;
+    }
+  }

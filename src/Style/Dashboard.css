@@ -161,4 +161,7 @@
         width: 180px;
         margin-left: 5px;
     }
+
+    .vendorLoginContainer {
+        width: 60%;}
 }
