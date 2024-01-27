@@ -225,7 +225,7 @@ const OrderPage = () => {
 
           <div className="totalCont">
             <div className="summaryTd">Total</div>
-            <div className="summaryTd">{total.toFixed(2)}$</div>
+            <div className="summaryTotal">{total.toFixed(2)}$</div>
           </div>
         </div>
 

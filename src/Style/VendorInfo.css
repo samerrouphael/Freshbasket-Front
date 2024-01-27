@@ -18,7 +18,11 @@
 }
 .button-container{ 
     display: flex;
-    flex-direction:column
+    flex-direction:column.buttonorder{ 
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
     ;
 }
 .vendor-table td {

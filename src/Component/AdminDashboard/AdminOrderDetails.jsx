@@ -46,7 +46,7 @@ const AdminOrderDetails = () => {
         <table className="tableDes">
           <tr>
             <td>Email</td>
-            <td>Product ID</td>
+           
             <td>Date</td>
             <td>Total Price</td>
             <td>status</td>
@@ -57,7 +57,7 @@ const AdminOrderDetails = () => {
           {data.map((order) => (
             <tr key={order._id}>
               <td>{order.email} </td>
-              <td>{order.productsId} </td>
+              
               <td>{order.date} </td>
               <td>{order.totalPrice} </td>
               <td>{order.status} </td>

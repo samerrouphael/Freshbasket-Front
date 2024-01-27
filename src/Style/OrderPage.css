@@ -57,7 +57,11 @@
     height: 40px;
     cursor: pointer;
 }
-
+.buttonorder{ 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 .colDiv {
     width: 92%;
     display: flex;
@@ -78,12 +82,19 @@
 
 .summaryTable {
     border: none;
+   
 }
 
 .summaryTd {
     font-size: 18px;
     font-weight: bold;
     padding-right: 100px;
+}
+.summaryTotal{
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 100px;
+    margin-left: 40px;
 }
 
 .totalCont {
@@ -189,8 +200,10 @@
         width: 92%;
         height: fit-content;
         padding: 0px;
-
-
+    }
+    .displayFlex {
+        border-bottom:none;
+      
     }
 
     .colDiv {
@@ -234,7 +247,9 @@
         margin-top: 10px;
         margin-right: 100px;
     }
-
+    .buttonorder{ 
+       margin-left: 80px;
+    }
         
     
 }
