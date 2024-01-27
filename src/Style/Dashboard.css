@@ -53,6 +53,7 @@
     height: 100vh;
     display: flex;
 
+
 }
 
 .side-menu {
@@ -144,6 +145,20 @@
 
     .vendorlogin-input {
         width: 150px;
-        height: 35px;}
+        height: 35px;
+    }
 
+    .side-menu {
+
+        width: 35%;
+    }
+
+    .product-input {
+        width: 180px;
+    }
+
+    .vendor-add-btn {
+        width: 180px;
+        margin-left: 5px;
+    }
 }

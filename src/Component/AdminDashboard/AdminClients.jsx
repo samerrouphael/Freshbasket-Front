@@ -87,7 +87,7 @@ const AdminClient = () => {
               
                 <td>{cient.password}</td>
                 <td>
-                  <div className="button-container">
+                  <div className="button-containor">
                     <button
                       type="button"
                       className="submitbt1"

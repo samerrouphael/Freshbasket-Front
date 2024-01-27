@@ -85,7 +85,7 @@ const AdminVendors = () => {
                 <td>{vendor.company}</td>
                 <td>{vendor.password}</td>
                 <td>
-                  <div className="button-container">
+                  <div className="button-containor">
                     <button
                       type="button"
                       className="submitbt1"
