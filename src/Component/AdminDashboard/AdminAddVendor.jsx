@@ -28,7 +28,7 @@ const AdminInfo = () => {
       password: password,
     };
     try {
-      const response = await fetch("https://fresh-basket.onrender.com/vendor/addVendor", {
+      const response = await fetch("https://fresh-basket.onrender.com/vendors/addVendor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
