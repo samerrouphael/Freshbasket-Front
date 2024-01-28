@@ -66,6 +66,19 @@ margin-left: 10px;
     font-size: 20px;
     cursor: pointer;
 }
+.submitbt2 {
+    background-color: #308b1e;
+    border: none;
+    height: 40px;
+    width: 170px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .productbtn-delete1 {
     background-color: red;

@@ -180,10 +180,12 @@ const AdminVendors = () => {
               }
             />
           </div>
-          <button className="" onClick={handleUpdateSubmit}>
+          <div className="button-containor">
+          <button className="submitbt2" onClick={handleUpdateSubmit}>
             {" "}
             Update Vendor
           </button>
+          </div>
         </div>
       )}
     </div>
