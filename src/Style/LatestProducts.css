@@ -18,6 +18,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+ 
+  margin-top: 30px;
   /* Add other slider container styles */
 }
 
@@ -25,6 +27,9 @@
   display: flex;
  
   transition: transform 0.5s ease-in-out;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   /* Add other wrapper styles */
 }
 

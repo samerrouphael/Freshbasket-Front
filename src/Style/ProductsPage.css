@@ -39,11 +39,13 @@
 }
 
 .allProducts {
-    margin-left: 50px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     margin-bottom: 30px;
-    margin-right: 200px;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .search{ 
     display: flex;
